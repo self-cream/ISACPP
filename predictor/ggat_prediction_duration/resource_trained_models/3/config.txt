@@ -1,0 +1,8 @@
+4 GGAT Modules
+self.layer1 = GatedMultiHeadGATLayer(in_dim, hidden_dim, self.gru_layer, dropout, num_heads)
+self.layer2 = GatedMultiHeadGATLayer(hidden_dim, hidden_dim, self.gru_layer, dropout, num_heads)
+self.layer3 = GatedMultiHeadGATLayer(hidden_dim, hidden_dim, self.gru_layer, dropout, num_heads)
+self.layer4 = GatedMultiHeadGATLayer(hidden_dim, hidden_dim, self.gru_layer, dropout, num_heads)
+
+hidden_dim=512, num_heads=3, batch size=64, lr=0.001, no dropout, no regularization
+loss=0.0019
